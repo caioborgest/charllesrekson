@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="sertao">
+<head>
+<meta charset="UTF-8" />
+<script>
+document.documentElement.classList.add("js");
+try {
+  var crTema = localStorage.getItem("cr-tema") === "psb" ? "psb" : "sertao";
+  document.documentElement.setAttribute("data-theme", crTema);
+  document.querySelector('meta[name="theme-color"]').setAttribute("content", crTema === "psb" ? "#7a1d10" : "#1b2340");
+} catch (e) {}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Charlles de Tiringa 4088 · Deputado Federal · PSB — Do Sertão pra Brasília</title>
+<meta name="description" content="Charlles de Tiringa é candidato a deputado federal pelo PSB, com mais de 10 milhões de inscritos no YouTube. Pauta: o homem do campo, o pequeno empresário e o interior de Pernambuco." />
+<meta property="og:title" content="Charlles de Tiringa 4088 — Do Sertão pra Brasília" />
+<meta property="og:description" content="Deputado Federal · PSB · Pernambuco · Eleições 2026. Vote 4088." />
+<meta property="og:image" content="assets/charlles-oficial.webp" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#7a1d10" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles-psb.css" />
+</head>
+<body>
+
+<div class="intro" id="intro" role="img" aria-label="4088 — Charlles Rekson — Deputado Federal pelo PSB">
+  <svg class="sun intro-sun" aria-hidden="true"></svg>
+  <p class="intro-num" data-text="4088" aria-hidden="true"></p>
+  <p class="intro-name" data-text="CHARLLES REKSON" aria-hidden="true"></p>
+  <p class="intro-sub" aria-hidden="true">Deputado Federal · PSB · Pernambuco</p>
+  <p class="intro-hint" aria-hidden="true">Toque para entrar</p>
+</div>
+
+<a class="skip" href="#historia">Pular para o conteúdo</a>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#topo">
+      <img class="brand-logo" src="assets/psb-logo.png" alt="PSB 40" aria-hidden="true" />
+      <svg class="sun sun-sm" aria-hidden="true"></svg>
+      <span class="brand-name">Charlles de Tiringa</span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-switch" id="themeSwitch" type="button" role="switch" aria-checked="true" aria-label="Tema Sertão (padrão). Alternar para o tema PSB." title="Alternar tema">
+        <span class="sw-seg is-active" data-seg="sertao">
+          <svg class="sw-ico" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" fill="currentColor" />
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="1.5" x2="12" y2="4.5" />
+              <line x1="12" y1="19.5" x2="12" y2="22.5" />
+              <line x1="1.5" y1="12" x2="4.5" y2="12" />
+              <line x1="19.5" y1="12" x2="22.5" y2="12" />
+              <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+              <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+              <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+              <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+            </g>
+          </svg>
+          <span class="sw-full">Sertão</span>
+        </span>
+        <span class="sw-seg" data-seg="psb">
+          <span class="sw-tag">PSB</span>
+        </span>
+      </button>
+      <div class="share" id="shareWrap">
+        <button class="share-btn" id="shareBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Compartilhar o site nas redes sociais" title="Compartilhar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="18" cy="5" r="3" />
+            <circle cx="6" cy="12" r="3" />
+            <circle cx="18" cy="19" r="3" />
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+          </svg>
+        </button>
+        <div class="share-pop" id="sharePop" hidden>
+          <span class="share-pop-tit">Compartilhar</span>
+          <a class="share-net" data-net="whatsapp" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a class="share-net" data-net="telegram" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a>
+          <a class="share-net" data-net="x" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+            X (Twitter)
+          </a>
+          <a class="share-net" data-net="facebook" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+          <button class="share-net" data-net="copy" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" /></svg>
+            Copiar link
+          </button>
+        </div>
+      </div>
+      <a class="btn btn-sol" href="https://queroapoiar.com.br/charllesdetiringa" target="_blank" rel="noopener">Quero apoiar</a>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-label="Charlles de Tiringa, candidato a deputado federal">
+    <img class="hero-bg" src="assets/charlles-oficial.webp" alt="" aria-hidden="true" fetchpriority="high" />
+
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow" data-seq="0">Deputado Federal · Pernambuco · Eleições 2026</p>
+        <h1 class="hero-title" data-seq="1">Do sertão<br />pra <span class="accent">Brasília</span>.</h1>
+        <p class="hero-sub" data-seq="2">Charlles de Tiringa é o empresário do Sertão do Pajeú que virou fenômeno na internet — mais de 10 milhões de inscritos. Agora quer levar a voz do interior para a Câmara Federal: a do homem do campo, do pequeno empresário e de quem vive longe do Recife.</p>
+        <div class="hero-cta" data-seq="3">
+          <a class="btn btn-sol" href="https://queroapoiar.com.br/charllesdetiringa" target="_blank" rel="noopener">Quero apoiar</a>
+          <a class="btn btn-ghost" href="#historia">Conhecer a história</a>
+        </div>
+        <p class="hero-num" data-seq="4"><span class="num-big">4088</span> <span class="num-label">na urna · PSB</span></p>
+      <p class="hero-count" id="heroCount" hidden aria-live="polite"><span class="bar-dot"></span>As urnas abrem em <strong id="heroDays">&mdash;</strong> dias<span class="bar-dot"></span></p>
+      </div>
+      <figure class="hero-media" data-seq="5">
+        <img src="assets/hero-charlles-1024.jpg" srcset="assets/hero-charlles-1024.jpg 1024w, assets/hero-charlles-2048.jpg 2048w, assets/hero-charlles-4k.jpg 4096w" sizes="(max-width: 620px) calc(100vw - 32px), 4096px" alt="Charlles de Tiringa" width="1024" height="1024" fetchpriority="high" />
+        <span class="hero-media-sun" aria-hidden="true"><svg class="sun sun-xs"></svg></span>
+      </figure>
+    </div>
+
+    <div class="marquee" aria-label="Números da audiência de Charlles de Tiringa">
+      <div class="marquee-track" id="marquee">
+        <span class="marquee-item"><strong>10 MI+</strong> inscritos no YouTube</span>
+        <span class="marquee-item"><strong>3 BI</strong> visualizações acumuladas</span>
+        <span class="marquee-item"><strong>2,8 MI</strong> seguidores no Instagram</span>
+        <span class="marquee-item"><strong>41.497</strong> votos na primeira candidatura</span>
+        <span class="marquee-item"><strong>1,9 MI</strong> no canal Chácara Comédia Selvagem</span>
+        <span class="marquee-item"><strong>367 MIL</strong> no Instagram oficial de campanha</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ QUEM É ============ -->
+  <section class="section section-bone" id="historia">
+    <div class="wrap wrap-split">
+      <div class="split-text" data-reveal>
+        <p class="eyebrow">Quem é Charlles</p>
+        <h2>De Petrolina para o mundo, com os pés no Sertão.</h2>
+        <p>Nascido em Petrolina, Charlles foi atrás de oportunidades em São Paulo ainda jovem. Voltou para as raízes, fixou residência em Serra Talhada, no coração do Pajeú, e construiu ali a vida que tem hoje: empresário de pecuária e imóveis, e um dos maiores criadores de conteúdo do interior do Nordeste.</p>
+        <p>Foi na chácara que a história ganhou o país: junto com Tiringa — que começou como caseiro — passou a gravar comédia rural no fim de 2019. Nasceu a <strong>Comédia Selvagem</strong>: mais de 10 milhões de inscritos, 3 bilhões de visualizações e até participação no The Noite com Danilo Gentili.</p>
+        <p>A mesma história que fez dele um fenômeno da internet agora quer servir ao povo: <em>“A pauta é voltada para o homem do campo e o pequeno empresário.”</em></p>
+      </div>
+      <div class="split-media" data-reveal>
+        <figure class="frame">
+          <img src="assets/charlles-missa-vaqueiro.jpg" alt="Charlles de Tiringa na 23ª Missa do Vaqueiro, em Canhotinho, ao lado de João Campos" width="1024" height="683" loading="lazy" />
+          <figcaption>Na 23ª Missa do Vaqueiro, em Canhotinho, ao lado de João Campos.</figcaption>
+        </figure>
+        <dl class="figures">
+          <div><dt>10 MI+</dt><dd>inscritos no YouTube</dd></div>
+          <div><dt>3 BI</dt><dd>de visualizações</dd></div>
+          <div><dt>2,8 MI</dt><dd>seguidores no Instagram</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CITAÇÃO ============ -->
+  <section class="quote" aria-label="Citação de João Campos sobre Charlles de Tiringa">
+    <svg class="sun quote-sun" aria-hidden="true"></svg>
+    <div class="quote-inner" data-reveal>
+      <p class="quote-text">“Quando conheci Charlles Rekson, fiquei impressionado com sua sensibilidade e com a sua vontade de ajudar a transformar a realidade de quem mais precisa.”</p>
+      <p class="quote-author">João Campos — prefeito do Recife e pré-candidato a governador de Pernambuco</p>
+    </div>
+  </section>
+
+  <!-- ============ BANDEIRAS ============ -->
+  <section class="section section-bone" id="bandeiras">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Bandeiras</p>
+        <h2>O que ele defende</h2>
+      </div>
+      <div class="cards">
+        <article class="card" data-reveal>
+          <svg class="sun sun-xs" aria-hidden="true"></svg>
+          <h3>O homem do campo e o pequeno empresário</h3>
+          <p>Pauta voltada para o produtor rural e o pequeno negócio do interior — quem faz o Sertão girar.</p>
+        </article>
+        <article class="card" data-reveal>
+          <svg class="sun sun-xs" aria-hidden="true"></svg>
+          <h3>Desenvolvimento do interior</h3>
+          <p>Fortalecer os municípios do Sertão, do Agreste e da Mata Sul, fora do eixo do Recife.</p>
+        </article>
+        <article class="card" data-reveal>
+          <svg class="sun sun-xs" aria-hidden="true"></svg>
+          <h3>Escuta e diálogo</h3>
+          <p>Candidatura construída de porta em porta: ouvir o povo primeiro, decidir depois.</p>
+        </article>
+        <article class="card" data-reveal>
+          <svg class="sun sun-xs" aria-hidden="true"></svg>
+          <h3>Transparência e compromisso</h3>
+          <p>Princípios inegociáveis: diálogo, transparência e compromisso com quem mais precisa.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAJETÓRIA ============ -->
+  <section class="section section-noite" id="trajetoria">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Trajetória</p>
+        <h2>Uma história construída com trabalho.</h2>
+      </div>
+      <ol class="timeline">
+        <li class="tl-item" data-reveal>
+          <span class="tl-year">2022</span>
+          <div class="tl-body">
+            <h3>Primeira candidatura: 41.497 votos</h3>
+            <p>Disputou deputado federal sem experiência política e alcançou uma votação expressiva em todo o estado.</p>
+          </div>
+        </li>
+        <li class="tl-item" data-reveal>
+          <span class="tl-year">Maio de 2025</span>
+          <div class="tl-body">
+            <h3>Filiação ao PSDB</h3>
+            <p>Ao lado de Tiringa, em cerimônia articulada com o presidente estadual do partido, Álvaro Porto.</p>
+          </div>
+        </li>
+        <li class="tl-item" data-reveal>
+          <span class="tl-year">Março de 2026</span>
+          <div class="tl-body">
+            <h3>Chegada ao PSB</h3>
+            <p>Filia-se ao partido com João Campos e assume a candidatura a deputado federal, número 4088.</p>
+          </div>
+        </li>
+        <li class="tl-item tl-item-final" data-reveal>
+          <span class="tl-year">Outubro de 2026</span>
+          <div class="tl-body">
+            <h3>O dia da eleição</h3>
+            <p>Vote <strong>4088</strong> e leve a voz do Sertão para a Câmara Federal.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ AGENDA ============ -->
+  <section class="section section-couro" id="agenda">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Na estrada</p>
+        <h2>Onde Charlles esteve</h2>
+      </div>
+            <div class="estrada-grid">
+        <article class="estrada-card estrada-card-foto" data-reveal>
+          <img class="estrada-foto" src="assets/estrada-missa-vaqueiro.jpg" alt="Charlles de Tiringa e Jo&atilde;o Campos na Missa do Vaqueiro, em Canhotinho" width="1280" height="853" loading="lazy" />
+          <div class="estrada-corpo">
+            <span class="estrada-num">Canhotinho &middot; Mata Sul</span>
+            <h3>23&ordf; Missa do Vaqueiro</h3>
+            <p>Ao lado de Jo&atilde;o Campos, &Aacute;lvaro Porto e lideran&ccedil;as da Mata Sul.</p>
+            <span class="estrada-tag">&#10003; feita</span>
+          </div>
+        </article>
+        <article class="estrada-card" data-reveal>
+          <span class="estrada-icone">&#10038;</span>
+          <span class="estrada-num">Agreste &middot; Mata Sul</span>
+          <h3>Agenda de escuta</h3>
+          <p>Palmares, Bel&eacute;m de Maria, &Aacute;gua Preta e Usina Serra Azul, ouvindo lideran&ccedil;as e comunidades.</p>
+          <span class="estrada-tag">em andamento</span>
+        </article>
+        <article class="estrada-card" data-reveal>
+          <span class="estrada-icone">&#10047;</span>
+          <span class="estrada-num">Serra Talhada &middot; Sert&atilde;o do Paje&uacute;</span>
+          <h3>A base</h3>
+          <p>No cora&ccedil;&atilde;o do Paje&uacute;, onde a candidatura come&ccedil;ou e segue firme.</p>
+          <span class="estrada-tag estrada-tag-raiz">a raiz</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-bone" id="rota">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Rota do Sert&atilde;o</p>
+        <h2>De Canhotinho ao Paje&uacute;,<br />cidade por cidade.</h2>
+        <p class="head-note">Cada carimbo abaixo &eacute; um lugar onde a conversa com o povo j&aacute; come&ccedil;ou.</p>
+      </div>
+      <div class="rota-grid">
+        <div class="rota-mapa-col">        <div class="rota-map">
+          <svg viewBox="0 0 560 204" role="img" aria-label="Mapa estilizado de Pernambuco com a rota de campanha de Charlles de Tiringa: Recife, Canhotinho, Bel&eacute;m de Maria, Palmares, &Aacute;gua Preta, Serra Talhada e Petrolina">
+            <path class="rota-shape" d="M357.4 3.3 L370.3 10.6 L373.9 19.3 L358.2 28.5 L355.9 34.9 L359.6 46.7 L351.7 50.4 L351.7 55.5 L342.1 64.8 L356.1 63.4 L359.8 69.3 L358.6 82.4 L373.3 95.1 L404.3 77.3 L401.9 74.5 L405.8 62.3 L408.8 63.4 L410.9 57.7 L420.0 59.3 L421.8 50.1 L435.5 51.5 L439.5 45.3 L458.2 49.8 L498.0 35.2 L502.6 15.8 L507.5 18.5 L522.7 9.3 L536.7 11.4 L544.6 17.5 L546.9 24.5 L557.2 24.9 L560.0 32.5 L556.7 38.3 L557.4 67.6 L530.5 151.4 L503.6 142.3 L479.6 151.8 L476.2 145.7 L466.9 146.0 L447.2 155.3 L448.5 161.0 L435.2 168.9 L438.8 175.2 L420.7 179.0 L406.4 190.9 L398.7 184.8 L383.8 184.2 L376.6 194.7 L363.5 181.6 L358.5 184.9 L355.6 179.3 L352.5 181.6 L345.6 168.1 L332.4 162.0 L330.7 156.2 L317.5 161.1 L312.8 158.7 L307.6 146.3 L301.7 149.6 L300.8 157.4 L288.9 173.1 L279.2 175.4 L266.8 189.9 L259.8 172.4 L261.7 161.5 L259.7 158.6 L252.2 163.0 L245.8 159.5 L242.7 154.6 L246.1 145.6 L238.3 143.9 L232.3 158.2 L226.7 146.7 L218.8 140.3 L205.6 141.3 L198.8 135.2 L187.1 131.0 L182.5 132.8 L177.4 119.5 L168.8 116.3 L149.7 127.6 L142.5 128.2 L142.5 140.7 L125.1 143.9 L126.9 153.1 L119.7 163.9 L105.1 169.5 L94.7 165.0 L85.5 194.2 L80.1 192.0 L76.1 198.2 L70.9 197.6 L62.8 204.0 L49.7 201.4 L51.5 188.4 L57.4 185.0 L59.1 174.1 L47.4 168.5 L37.4 144.2 L28.8 145.0 L27.5 139.6 L20.0 136.6 L20.9 132.1 L6.6 135.0 L0.0 132.4 L12.1 126.7 L30.6 104.1 L36.9 108.3 L39.7 100.1 L44.5 102.3 L49.2 90.6 L65.7 79.8 L70.1 54.8 L67.9 49.8 L58.5 45.1 L61.0 30.9 L55.9 17.1 L69.2 11.0 L88.8 9.3 L95.0 14.8 L145.0 3.4 L174.5 24.7 L177.8 30.8 L175.4 36.2 L190.0 41.5 L193.8 54.0 L200.1 49.9 L204.5 52.8 L206.8 44.8 L226.0 32.2 L236.3 44.4 L252.1 42.2 L256.5 37.3 L262.6 51.4 L273.1 46.8 L280.5 51.4 L283.7 43.8 L289.5 46.5 L299.2 35.1 L305.7 32.6 L309.4 35.7 L312.2 25.6 L327.0 18.4 L330.1 8.7 L339.6 7.7 L349.0 0.1 L355.6 1.9 Z" />
+            <polyline class="rota-line" points="554.5,72.1 441.7,148.6 472.3,124.4 493.2,130.3 498.4,132.3 261.5,65.8 72.7,195.4" />
+              <rect class="rota-quad rota-quad-base" x="549" y="66.6" width="11" height="11" rx="2" />
+      <g class="rota-cidade" transform="translate(441.7 148.6)"><circle class="rota-dot" r="6.5" /><text class="rota-num" x="0" y="3.2" text-anchor="middle">1</text></g>
+      <g class="rota-cidade" transform="translate(472.3 124.4)"><circle class="rota-dot" r="6.5" /><text class="rota-num" x="0" y="3.2" text-anchor="middle">2</text></g>
+      <g class="rota-cidade" transform="translate(493.2 130.3)"><circle class="rota-dot" r="6.5" /><text class="rota-num" x="0" y="3.2" text-anchor="middle">3</text></g>
+      <g class="rota-cidade" transform="translate(498.4 132.3)"><circle class="rota-dot" r="6.5" /><text class="rota-num" x="0" y="3.2" text-anchor="middle">4</text></g>
+      <g class="rota-cidade" transform="translate(261.5 65.8)"><circle class="rota-dot" r="6.5" /><text class="rota-num" x="0" y="3.2" text-anchor="middle">5</text></g>
+      <rect class="rota-quad rota-quad-berco" x="67.2" y="189.9" width="11" height="11" rx="2" />
+      <text class="rota-label" x="544.5" y="59.099999999999994" text-anchor="end">Recife<tspan class="rota-tag"> &middot; base</tspan></text>
+      <text class="rota-label" x="431.7" y="135.6" text-anchor="end">Canhotinho<tspan class="rota-tag"> &middot; 1&ordf; parada</tspan></text>
+      <text class="rota-label" x="462.3" y="111.4" text-anchor="end">Belém de Maria<tspan class="rota-tag"> &middot; 2&ordf; parada</tspan></text>
+      <text class="rota-label" x="483.2" y="117.30000000000001" text-anchor="end">Palmares<tspan class="rota-tag"> &middot; 3&ordf; parada</tspan></text>
+      <text class="rota-label" x="488.4" y="119.30000000000001" text-anchor="end">Água Preta<tspan class="rota-tag"> &middot; 4&ordf; parada</tspan></text>
+      <text class="rota-label" x="271.5" y="52.8" text-anchor="start">Serra Talhada<tspan class="rota-tag"> &middot; 5&ordf; parada</tspan></text>
+      <text class="rota-label" x="82.7" y="182.4" text-anchor="start">Petrolina<tspan class="rota-tag"> &middot; ber&ccedil;o</tspan></text>
+          </svg>
+        </div>
+        </div>
+                <div class="rota-carimbos">
+          <span class="carimbo"><strong>1</strong>Canhotinho<small>Missa do Vaqueiro</small></span>
+          <span class="carimbo"><strong>2</strong>Bel&eacute;m de Maria<small>Agenda de escuta</small></span>
+          <span class="carimbo"><strong>3</strong>Palmares<small>Agenda de escuta</small></span>
+          <span class="carimbo"><strong>4</strong>&Aacute;gua Preta<small>Agenda de escuta</small></span>
+          <span class="carimbo"><strong>5</strong>Serra Talhada<small>O Paje&uacute; pede passagem</small></span>
+          <span class="carimbo carimbo-final"><strong>4088</strong>Na urna<small>PSB &middot; 4 de outubro</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section section-noite" id="chacara">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Direto da ch&aacute;cara</p>
+        <h2>O que tem sa&iacute;do<br />&eacute; Sert&atilde;o de verdade.</h2>
+        <p class="head-note">V&iacute;deos da Com&eacute;dia Selvagem e publica&ccedil;&otilde;es da campanha &mdash; a conversa come&ccedil;a a&iacute;. Siga, compartilhe e espalhe.</p>
+      </div>
+      <div class="chacara-grid">
+        <a class="card-post" href="https://www.youtube.com/watch?v=daLzvlTzLfc" target="_blank" rel="noopener">
+          <img src="assets/chacara-vida-continua.jpg" alt="Charlles e Tiringa mandando reflexões e superação, da Com&eacute;dia Selvagem" loading="lazy" width="1280" height="720" />
+          <span class="card-post-tag">YouTube</span>
+          <h3>Reflex&otilde;es e Supera&ccedil;&atilde;o</h3>
+        </a>
+        <a class="card-post" href="https://www.youtube.com/watch?v=yerJTl0WRCw" target="_blank" rel="noopener">
+          <img src="assets/chacara-herois.jpg" alt="Charlles e Tiringa na fazenda do Goi&aacute;s, parte 8, da Com&eacute;dia Selvagem" loading="lazy" width="1280" height="720" />
+          <span class="card-post-tag">YouTube</span>
+          <h3>Na Fazenda do Goi&aacute;s, Parte 8</h3>
+        </a>
+        <a class="card-post" href="https://www.youtube.com/watch?v=18d88HW7ZvM" target="_blank" rel="noopener">
+          <img src="assets/chacara-cacada.jpg" alt="Charlles e Tiringa na fazenda do Goi&aacute;s, parte 5, da Com&eacute;dia Selvagem" loading="lazy" width="1280" height="720" />
+          <span class="card-post-tag">YouTube</span>
+          <h3>Na Fazenda do Goi&aacute;s, Parte 5</h3>
+        </a>
+        <a class="card-post" href="https://www.youtube.com/watch?v=l4gVXlH4hkw" target="_blank" rel="noopener">
+          <img src="assets/chacara-herois2.jpg" alt="Marco de 10 milhões de inscritos, da Com&eacute;dia Selvagem" loading="lazy" width="1280" height="720" />
+          <span class="card-post-tag">YouTube</span>
+          <h3>10 milh&otilde;es de inscritos</h3>
+        </a>
+        <a class="card-post" href="https://www.instagram.com/charllesreksonreal/" target="_blank" rel="noopener">
+          <img src="assets/chacara-filiacao.jpg" alt="Filia&ccedil;&atilde;o de Charlles ao PSB, com Jo&atilde;o Campos" loading="lazy" width="1284" height="903" />
+          <span class="card-post-tag">Instagram</span>
+          <h3>Filia&ccedil;&atilde;o ao PSB, com Jo&atilde;o</h3>
+        </a>
+        <a class="card-post card-post-cta" href="https://www.youtube.com/@ComediaSelvagem" target="_blank" rel="noopener">
+          <span class="cta-grao">&#10038;</span>
+          <h3>Com&eacute;dia Selvagem</h3>
+          <p>O canal que nasceu na ch&aacute;cara e virou Brasil. Vem com a gente.</p>
+          <span class="cta-seta">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <!-- ============ REDES ============ -->
+  <section class="section section-bone" id="redes">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Redes</p>
+        <h2>A maior audiência do interior está na campanha.</h2>
+        <p class="head-note">Siga e ajude a espalhar a mensagem do Sertão.</p>
+      </div>
+      <div class="net-grid" data-reveal>
+        <a class="net" href="https://www.instagram.com/charllesreksonreal/" target="_blank" rel="noopener">
+          <span class="net-num">367 MIL</span>
+          <span class="net-name">Instagram oficial da campanha</span>
+          <span class="net-handle">@charllesreksonreal</span>
+          <span class="net-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="net" href="https://www.instagram.com/charllesrekson/" target="_blank" rel="noopener">
+          <span class="net-num">2,8 MI</span>
+          <span class="net-name">Instagram principal</span>
+          <span class="net-handle">@charllesrekson</span>
+          <span class="net-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="net" href="https://www.youtube.com/@ComediaSelvagem" target="_blank" rel="noopener">
+          <span class="net-num">10 MI</span>
+          <span class="net-name">Comédia Selvagem no YouTube</span>
+          <span class="net-handle">10 mi+ inscritos</span>
+          <span class="net-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="net" href="https://www.tiktok.com/@charllesrekson95" target="_blank" rel="noopener">
+          <span class="net-num">TikTok</span>
+          <span class="net-name">Perfil oficial</span>
+          <span class="net-handle">@charllesrekson95</span>
+          <span class="net-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="section section-noite cta-final" id="apoio">
+    <svg class="sun cta-sun" aria-hidden="true"></svg>
+    <div class="wrap wrap-center" data-reveal>
+      <p class="eyebrow">Eleições 2026</p>
+      <h2 class="cta-title">A voz do Sertão merece um lugar na Câmara.</h2>
+      <svg class="cta-estrela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.6 L14.5 9.4 L21.8 9.4 L15.9 13.8 L18.35 20.6 L12 16.3 L5.65 20.6 L8.1 13.8 L2.2 9.4 L9.5 9.4 Z" /></svg>
+      <p class="cta-num">4088</p>
+      <p class="cta-sub">Vote <strong>4088</strong> — Deputado Federal · Pernambuco · PSB</p>
+      <div class="hero-cta">
+        <a class="btn btn-sol" href="https://queroapoiar.com.br/charllesdetiringa" target="_blank" rel="noopener">Quero apoiar</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/charllesreksonreal/" target="_blank" rel="noopener">Seguir no Instagram</a>
+      </div>
+      <p class="slogan">Nossos princípios são inegociáveis.</p>
+      <p class="mini">Apoie a campanha em <a href="https://queroapoiar.com.br/charllesdetiringa" target="_blank" rel="noopener">queroapoiar.com.br/charllesdetiringa</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <img class="footer-brand" src="assets/psb-logo.png" alt="PSB 40" aria-hidden="true" />
+    <p class="disclaimer">Propaganda eleitoral. Charlles de Tiringa (Charlles Rekson Barboza de Lima) — 4088 — Deputado Federal — PSB — Eleições 2026.</p>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/charllesreksonreal/" target="_blank" rel="noopener">Instagram oficial</a>
+      <span class="dot" aria-hidden="true">·</span>
+      <a href="https://www.instagram.com/charllesrekson/" target="_blank" rel="noopener">Instagram principal</a>
+      <span class="dot" aria-hidden="true">·</span>
+      <a href="https://queroapoiar.com.br/charllesdetiringa" target="_blank" rel="noopener">Site de apoio</a>
+      <span class="foot-num" aria-hidden="true">4088</span>
+    </div>
+    <p class="tiny">PSB — Partido Socialista Brasileiro · Legenda 40. Feito com orgulho no Sertão do Pajeú.</p>
+  </div>
+</footer>
+
+<div class="bar-mobile" id="barMobile" aria-label="Apoiar a campanha de Charlles de Tiringa">
+  <span class="bar-num"><span class="bar-dot" aria-hidden="true"></span>4088</span>
+  <span class="bar-meta"><strong>Charlles de Tiringa</strong><small>Deputado Federal · PE · PSB</small></span>
+  <div class="share" id="shareWrapBar">
+    <button class="share-btn" id="shareBtnBar" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Compartilhar o site nas redes sociais" title="Compartilhar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="18" cy="5" r="3" />
+        <circle cx="6" cy="12" r="3" />
+        <circle cx="18" cy="19" r="3" />
+        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+      </svg>
+    </button>
+  </div>
+  <a class="btn btn-sol" href="https://queroapoiar.com.br/charllesdetiringa" target="_blank" rel="noopener">Quero apoiar</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

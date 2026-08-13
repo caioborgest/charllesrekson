@@ -1,0 +1,101 @@
+/* ============================================================
+   Tema PSB — identidade institucional partidária
+   Vermelho PSB · Amarelo dourado · Bordô nas seções (sem azul)
+   Ativado por html[data-theme="psb"] · carregar após styles.css
+   ============================================================ */
+
+html[data-theme="psb"] {
+  --noite: #7a1d10;
+  --noite-deep: #5f150b;
+  --terra: #c0392b;
+  --sol: #f5b942;
+  --couro: #c0392b;
+  --osso: #faf7f2;
+  --tinta: #2b211a;
+  --line: rgba(43, 33, 26, 0.16);
+  --line-light: rgba(250, 247, 242, 0.22);
+  --shadow: 0 18px 40px -18px rgba(95, 21, 11, 0.35);
+}
+
+/* --- Intro: cortina bordô, 4088 vermelho, sol dourado --- */
+html[data-theme="psb"] .intro {
+  background:
+    radial-gradient(90% 70% at 50% 0%, rgba(245, 185, 66, 0.14), transparent 60%),
+    var(--noite);
+}
+html[data-theme="psb"] .intro-sun { color: rgba(245, 185, 66, 0.15); }
+html[data-theme="psb"] .intro-num {
+  color: var(--terra);
+  text-shadow: 0 26px 90px rgba(192, 57, 43, 0.42);
+}
+
+/* --- CTAs: sempre vermelho com texto claro --- */
+html[data-theme="psb"] .btn-sol { background: var(--terra); color: var(--osso); }
+html[data-theme="psb"] .btn-sol:hover {
+  background: #d14a38;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -10px rgba(192, 57, 43, 0.8);
+}
+
+/* --- Citação: faixa amarela dourada --- */
+html[data-theme="psb"] .quote {
+  background: var(--sol);
+  color: var(--tinta);
+}
+html[data-theme="psb"] .quote-inner { border-left-color: var(--terra); }
+html[data-theme="psb"] .quote-sun { color: rgba(43, 33, 26, 0.1); }
+html[data-theme="psb"] .quote-author { color: rgba(43, 33, 26, 0.75); }
+
+/* --- Bandeiras: ícones em amarelo PSB --- */
+html[data-theme="psb"] .card .sun-xs { color: var(--sol); }
+
+/* --- Números: divisórias e destaques em vermelho --- */
+html[data-theme="psb"] .figures div { border-top-color: rgba(192, 57, 43, 0.35); }
+html[data-theme="psb"] .figures dd { color: rgba(43, 33, 26, 0.75); }
+
+/* --- CTA final: 4088 em vermelho PSB --- */
+html[data-theme="psb"] .cta-num {
+  color: var(--terra);
+  text-shadow: 0 20px 60px rgba(192, 57, 43, 0.35);
+}
+
+/* --- Alternador: segmento ativo em vermelho no tema PSB --- */
+html[data-theme="psb"] .theme-switch .sw-seg.is-active {
+  background: var(--terra);
+  color: var(--osso);
+}
+
+/* --- Nav e barra mobile: bordô institucional --- */
+html[data-theme="psb"] .nav.is-scrolled { background: rgba(95, 21, 11, 0.94); }
+html[data-theme="psb"] .bar-mobile { background: rgba(95, 21, 11, 0.96); }
+
+/* --- Compartilhar: painel claro no tema PSB --- */
+html[data-theme="psb"] .share-pop { background: #fff; border-color: rgba(43, 33, 26, 0.14); }
+html[data-theme="psb"] .share-pop-tit { color: rgba(43, 33, 26, 0.55); }
+html[data-theme="psb"] .share-net { color: var(--tinta); }
+html[data-theme="psb"] .share-net:hover { background: rgba(43, 33, 26, 0.06); }
+html[data-theme="psb"] .share-net[data-net="x"] { color: #111; }
+
+
+/* --- Seção "Onde Charlles esteve": fundo vermelho PSB, eyebrow amarelo --- */
+html[data-theme="psb"] .section-couro .eyebrow { color: var(--sol); }
+html[data-theme="psb"] .section-couro h2 { color: var(--osso); }
+
+/* --- Faixa da bandeira: no PSB o destaque volta a ser o vermelho partidário --- */
+html[data-theme="psb"] .section-head h2::after,
+html[data-theme="psb"] .split-text h2::after {
+  width: 56px;
+  height: 4px;
+  background: var(--terra);
+  box-shadow: none;
+}
+
+/* --- Logomarca PSB: regra base no styles.css (brand-logo); aqui só o footer --- */
+html[data-theme="psb"] .footer-brand {
+  display: block;
+  max-width: 170px;
+  height: auto;
+  mix-blend-mode: screen;
+  margin: 0 auto 18px;
+}
+.footer-brand { display: none; }
