@@ -142,28 +142,11 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  /* ---------- Parallax sutil do hero (só telas largas; mobile sem zoom) ---------- */
-  var heroBg = document.querySelector(".hero-bg");
-  var isDesktop = window.matchMedia("(min-width: 768px)").matches;
-  if (heroBg && !prefersReduced && isDesktop) {
-    var ticking = false;
-    function onParallax() {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(function () {
-        var y = window.scrollY;
-        if (y < window.innerHeight * 1.2) {
-          heroBg.style.transform = "scale(1.12) translateY(" + (y * 0.22).toFixed(1) + "px)";
-        }
-        ticking = false;
-      });
-    }
-    window.addEventListener("scroll", onParallax, { passive: true });
-  }
-
   /* ---------- Hero: crossfade entre as duas imagens de fundo (só telas largas) ---------- */
+  var heroBg = document.getElementById("heroBgA");
   var heroBg2 = document.getElementById("heroBgB");
-  if (heroBg2 && !prefersReduced && isDesktop) {
+  var isDesktop = window.matchMedia("(min-width: 768px)").matches;
+  if (heroBg && heroBg2 && !prefersReduced && isDesktop) {
     var showA = true;
     var flipHero = function () {
       showA = !showA;
