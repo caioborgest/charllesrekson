@@ -1161,7 +1161,7 @@ html.js [data-reveal].is-in { opacity: 1; transform: none; }
   .sw-seg { padding: 5px 9px; }
   .nav .btn-sol { padding: 8px 13px; font-size: 0.78rem; min-height: 0; }
   .nav .btn-sol::after { content: none; }
-  .hero-bg { display: block; }
+  .hero-bg { display: block; object-position: 35% 30%; }
   .hero-bg-2 { display: none; }
   .hero-media { display: block; }
   .hero-media img {

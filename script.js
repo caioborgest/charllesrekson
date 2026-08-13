@@ -108,20 +108,32 @@
   }
 
   if (intro && !prefersReduced) {
-    body.classList.add("is-intro");
-    intro.classList.add("is-anim");
+    var diaHoje = (function () {
+      var d = new Date();
+      return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+    })();
+    var vistoHoje = false;
+    try { vistoHoje = localStorage.getItem("cr-intro-dia") === diaHoje; } catch (e) {}
 
-    var skip = function () {
-      if (intro.classList.contains("is-exit")) return;
-      intro.classList.add("is-exit");
-      window.setTimeout(finishIntro, 750);
-    };
+    if (vistoHoje) {
+      finishIntro();
+    } else {
+      body.classList.add("is-intro");
+      intro.classList.add("is-anim");
+      try { localStorage.setItem("cr-intro-dia", diaHoje); } catch (e) {}
 
-    intro.addEventListener("click", skip);
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" || e.key === "Enter" || e.key === " ") skip();
-    });
-    window.setTimeout(skip, 2600);
+      var skip = function () {
+        if (intro.classList.contains("is-exit")) return;
+        intro.classList.add("is-exit");
+        window.setTimeout(finishIntro, 750);
+      };
+
+      intro.addEventListener("click", skip);
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" || e.key === "Enter" || e.key === " ") skip();
+      });
+      window.setTimeout(skip, 3000);
+    }
   } else {
     finishIntro();
   }
