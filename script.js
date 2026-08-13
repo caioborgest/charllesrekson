@@ -104,15 +104,10 @@
   function finishIntro() {
     body.classList.add("is-ready");
     body.classList.remove("is-intro");
-    try { sessionStorage.setItem("cr-intro-4088", "1"); } catch (e) {}
     if (intro) intro.remove();
   }
 
-  var introSeen = false;
-  try { introSeen = !!sessionStorage.getItem("cr-intro-4088"); } catch (e) {}
-  if (location.search.indexOf("intro") > -1 || location.hash === "#intro") introSeen = false;
-
-  if (intro && !prefersReduced && !introSeen) {
+  if (intro && !prefersReduced) {
     body.classList.add("is-intro");
     intro.classList.add("is-anim");
 

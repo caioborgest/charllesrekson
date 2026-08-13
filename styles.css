@@ -331,8 +331,13 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .btn-ghost {
   border-color: var(--line-light);
   color: var(--osso);
+  box-shadow: 0 14px 30px -12px rgba(8, 10, 14, 0.45);
 }
-.btn-ghost:hover { background: rgba(245, 238, 224, 0.1); transform: translateY(-2px); }
+.btn-ghost:hover {
+  background: rgba(245, 238, 224, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px -14px rgba(8, 10, 14, 0.55);
+}
 
 /* ---------- Hero ---------- */
 .hero {
@@ -352,6 +357,18 @@ a, button { -webkit-tap-highlight-color: transparent; }
   height: 100%;
   object-fit: cover;
   object-position: center 28%;
+}
+
+.hero-bg-2 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  opacity: 0.3;
+  mix-blend-mode: screen;
+  pointer-events: none;
 }
 
 .hero-grid {
