@@ -329,12 +329,15 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .btn-sol:hover::after { opacity: 1; transform: none; }
 
 .btn-ghost {
-  border-color: var(--line-light);
+  border-color: rgba(245, 238, 224, 0.4);
   color: var(--osso);
+  background: rgba(245, 238, 224, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 14px 30px -12px rgba(8, 10, 14, 0.45);
 }
 .btn-ghost:hover {
-  background: rgba(245, 238, 224, 0.1);
+  background: rgba(245, 238, 224, 0.22);
   transform: translateY(-2px);
   box-shadow: 0 18px 36px -14px rgba(8, 10, 14, 0.55);
 }
@@ -357,6 +360,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
   height: 100%;
   object-fit: cover;
   object-position: center 28%;
+  transition: opacity 1.6s ease;
 }
 
 .hero-bg-2 {
@@ -365,11 +369,13 @@ a, button { -webkit-tap-highlight-color: transparent; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
-  opacity: 0.3;
-  mix-blend-mode: screen;
+  object-position: center 28%;
+  opacity: 0;
+  transition: opacity 1.6s ease;
   pointer-events: none;
 }
+.hero-bg-2.is-visible { opacity: 1; }
+.hero-bg.is-faded { opacity: 0; }
 
 .hero-grid {
   position: relative;

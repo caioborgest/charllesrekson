@@ -161,6 +161,18 @@
     window.addEventListener("scroll", onParallax, { passive: true });
   }
 
+  /* ---------- Hero: crossfade entre as duas imagens de fundo (só telas largas) ---------- */
+  var heroBg2 = document.getElementById("heroBgB");
+  if (heroBg2 && !prefersReduced && isDesktop) {
+    var showA = true;
+    var flipHero = function () {
+      showA = !showA;
+      heroBg.classList.toggle("is-faded", !showA);
+      heroBg2.classList.toggle("is-visible", !showA);
+    };
+    window.setInterval(flipHero, 6000);
+  }
+
   /* ---------- Compartilhar nas redes sociais ---------- */
   var SHARE_TEXT = "Charlles de Tiringa 4088 — Deputado Federal · PSB. Vote 4088: a voz do Sertão pra Brasília.";
 
