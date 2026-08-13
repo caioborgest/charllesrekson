@@ -1148,12 +1148,7 @@ html.js [data-reveal].is-in { opacity: 1; transform: none; }
   .nav-inner { padding: 10px 16px; padding-top: calc(10px + env(safe-area-inset-top, 0px)); }
   .brand { min-width: 0; gap: 8px; }
   .brand .sun-sm { display: none; }
-  .brand-name {
-    font-size: 0.76rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  .brand-name { display: none; }
   .nav .share-btn { width: 44px; height: 44px; }
   .nav .share-pop { top: calc(100% + 10px); right: 0; left: auto; }
   .sw-full { display: none; }
@@ -1161,6 +1156,7 @@ html.js [data-reveal].is-in { opacity: 1; transform: none; }
   .nav .btn-sol { padding: 8px 13px; font-size: 0.78rem; min-height: 0; }
   .nav .btn-sol::after { content: none; }
   .hero-bg { display: block; }
+  .hero-bg-2 { display: none; }
   .hero-media { display: block; }
   .hero-media img {
     display: block;

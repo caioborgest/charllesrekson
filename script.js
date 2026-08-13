@@ -142,9 +142,10 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  /* ---------- Parallax sutil do hero ---------- */
+  /* ---------- Parallax sutil do hero (só telas largas; mobile sem zoom) ---------- */
   var heroBg = document.querySelector(".hero-bg");
-  if (heroBg && !prefersReduced) {
+  var isDesktop = window.matchMedia("(min-width: 768px)").matches;
+  if (heroBg && !prefersReduced && isDesktop) {
     var ticking = false;
     function onParallax() {
       if (ticking) return;
